@@ -1,6 +1,10 @@
 acceptable_coins = [25,10,5]
 balance=0
 while True:
+    if balance==50 or balance>=50:
+        print("YOU GOT COLA")
+        balance -= 50
+    print(f"balance is: {balance} SAR")
     print("Choose an option or write 'q' to exit:")
     print("0 - 25")
     print("1 - 10")
@@ -10,12 +14,13 @@ while True:
         print ("bye")
         break
     if Insert_Coin == "0":
-        print(f"balance is: {balance+25} SAR")
-        
+        balance += 25
     elif Insert_Coin == "1":
-        print(f"balance is: {balance+10} SAR")
+        
+        balance += 10
     elif Insert_Coin == "2":
-        print(f"balance is: {balance+5} SAR")
+        
+        balance += 5
     else:
         print("bad coin")
         continue
